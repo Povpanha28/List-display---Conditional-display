@@ -7,10 +7,12 @@ function App() {
   return (
     <>
       <Header batchname="React" />
-      <Score courseName="Java" courseResults={JAVA_RESULTS} />
-      <Score courseName="Python" courseResults={PYTHON_RESULTS} />
-      <Score courseName="HTML" courseResults={HTML_RESULTS} />
-      <Score courseName="English" courseResults={ENGLISH_RESULTS} />
+      <main className="scores-container">
+        <Score courseName="Java" courseResults={JAVA_RESULTS} />
+        <Score courseName="Python" courseResults={PYTHON_RESULTS} />
+        <Score courseName="HTML" courseResults={HTML_RESULTS} />
+        <Score courseName="English" courseResults={ENGLISH_RESULTS} />
+      </main>
     </>
   );
 }

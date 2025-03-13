@@ -3,7 +3,6 @@ import Satistic from "./Satistic"
 export default function Score({ courseName, courseResults }) {
     return (
         <>
-            <main className="scores-container">
                 <div class="scores">
                     <h1>{courseName}</h1>
                     <table>
@@ -26,7 +25,6 @@ export default function Score({ courseName, courseResults }) {
                     </table>
                     <Satistic courseResults={courseResults} />
                 </div>
-            </main>
         </>
     )
 }
